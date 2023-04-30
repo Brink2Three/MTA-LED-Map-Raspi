@@ -8,12 +8,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 MTA_API_KEY = os.getenv('api_key')
-
+line_id = "1"
 
 
 def main():
-    line = ["1"]
-    feed = NYCTFeed("1", api_key=MTA_API_KEY)
+    line = [line_id]
+    feed = NYCTFeed(line_id, api_key=MTA_API_KEY)
     print_feed(feed, line, "N")
     print_feed(feed, line, "S")
 
