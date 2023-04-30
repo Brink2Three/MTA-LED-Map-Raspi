@@ -12,7 +12,7 @@ line_123 = (127, 0, 0)
 line_456 = (0, 127, 7)
 line_ace = (6, 20, 127)
 line_7 = (100, 0, 100)
-line_bdfm = (127, 50, 14)
+line_bdfm = (190, 50, 14)
 line_jz = (153, 102, 51)
 line_nqrw = (252, 204, 10)
 line_ls = (128, 129, 131)
@@ -93,7 +93,7 @@ pixels1[6] = line_jz
 pixels1[7] = line_nqrw
 pixels1[8] = line_ls
 
-time.sleep(5)
+time.sleep(10)
 
 pixels1.fill((0, 0, 0))
 
