@@ -26,15 +26,25 @@ line_ls = (128, 129, 131)
 bg = (5, 5, 5)
 
 
-def print_feed(feed, line_id, direction):
-    for trip in feed.filter_trips(line_id, direction):
-        print(trip)
+line_id = "1"
+
 
 def main():
-    line = ["1"]
-    feed = NYCTFeed("1", api_key=MTA_API_KEY)
-    print_feed(feed, line, "N")
-    print_feed(feed, line, "S")
+    line = [line_id]
+    feed = NYCTFeed(line_id, api_key=MTA_API_KEY)
+    print_feed(feed, line)
+
+#Trying to extrapolate data so I can feed the stopped train's stations into a variable. 
+def print_feed(feed, line_id):
+    for trip in feed.filter_trips(line_id):
+        stop_check = str(trip)
+        if stop_check.__contains__("STOPPED_AT"):
+            print(stop_check)
+        else:
+            pass
 
 if __name__ == '__main__':
     main()
+    
+else : 
+    ()
