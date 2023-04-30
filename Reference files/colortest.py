@@ -22,57 +22,61 @@ pixels1.fill((15, 15, 15))
 
 time.sleep(3)
 
-while x<159:
-    
+while x<20:
+    print( "123 is currently shown")
     pixels1[x] = line_123
-    pixels1[x-1] = bg
+    pixels1[x-3] = bg
     x=x+1
-    time.sleep(0.1)
+    time.sleep(0.5)
 
 while x>-1:
+    print( "456 is currently shown")
     pixels1[x] = line_456
-    pixels1[x+1] = bg
+    pixels1[x+3] = bg
     x=x-1
-    time.sleep(0.1)
+    time.sleep(0.5)
    
-while x<159:
-    
+while x<20:
+    print( "ACE is currently shown")
     pixels1[x] = line_ace
-    pixels1[x-1] = bg
+    pixels1[x-3] = bg
     x=x+1
-    time.sleep(0.1)
+    time.sleep(0.5)
 
 while x>-1:
+    print( "7 is currently shown")
     pixels1[x] = line_7
-    pixels1[x+1] = bg
+    pixels1[x+3] = bg
     x=x-1
-    time.sleep(0.1)
+    time.sleep(0.5)
 
-while x<159:
-    
+while x<20:
+    print( "BDFM is currently shown")
     pixels1[x] = line_bdfm
-    pixels1[x-1] = bg
+    pixels1[x-3] = bg
     x=x+1
-    time.sleep(0.1)
+    time.sleep(0.5)
 
 while x>-1:
+    print( "JZ is currently shown")
     pixels1[x] = line_jz
-    pixels1[x+1] = bg
+    pixels1[x+3] = bg
     x=x-1
-    time.sleep(0.1)
+    time.sleep(0.5)
 
-while x<159:
-    
+while x<20:
+    print( "NQRW is currently shown")
     pixels1[x] = line_nqrw
-    pixels1[x-1] = bg
+    pixels1[x-3] = bg
     x=x+1
-    time.sleep(0.1)
+    time.sleep(0.5)
 
 while x>-1:
+    print( "LS is currently shown")
     pixels1[x] = line_ls
-    pixels1[x+1] = bg
+    pixels1[x+3] = bg
     x=x-1
-    time.sleep(0.1)    
+    time.sleep(0.5)    
 
 time.sleep(5)
 
