@@ -8,7 +8,7 @@ pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
 x=0
 
 # Line colors so I don't have to type the codes out
-line_123 = (238, 53, 46) # Too pink
+line_123 = (255, 20, 20)
 line_456 = (0, 147, 60)
 line_ace = (0, 57, 166)
 line_7 = (185, 51, 173)
