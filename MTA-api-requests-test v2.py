@@ -24,7 +24,7 @@ def print_feed(feed, line_id, direction):
         if stop_check.__contains__("STOPPED_AT"):
             print(stop_check)
         else:
-            print("")
+            pass
 
 if __name__ == '__main__':
     main()
