@@ -3,12 +3,12 @@ import time
 import board
 import neopixel
 
-pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=1)
+pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
 
 x=0
 
 # Line colors so I don't have to type the codes out
-line_123 = (238, 53, 46)
+line_123 = (238, 53, 46) # Too pink
 line_456 = (0, 147, 60)
 line_ace = (0, 57, 166)
 line_7 = (185, 51, 173)
