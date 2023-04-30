@@ -16,3 +16,15 @@ pip install nyct_gtfs
 pip install python-dotenv
 
 You can ignore warnings about any scripts not being in PATH. 
+
+
+Create a file in the root directory called ".env" and add the following to it: api_key = "YOUR API KEY HERE"
+Replace "YOUR API KEY HERE" with your actual MTA API key. 
+
+
+
+
+
+
+
+LED size used: .2" x .2", inner circle is .15" in diameter. 
