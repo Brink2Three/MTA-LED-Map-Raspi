@@ -4,7 +4,9 @@
 
 Steps: 
 
-Install python3. This was tested on windows 10 22H2 with Python 3.10 and on a raspberry Pi Zero with Python 3.9.2 
+Install python3. This was tested on windows 10 22H2 with Python 3.10 and on a raspberry Pi Zero with Python 3.9.2. 
+Only the requests testing will work on windows, as the LED code will attempt to connect to non-existent GPIO pins. 
+
 
 Install the following dependancies: 
 
