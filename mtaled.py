@@ -27,17 +27,17 @@ bg = (5, 5, 5)
 
 strings = ["1", "2", "3", "4", "5", "6", "7", "A", "C", "E", "B", "D", "F", "M", "N", "Q", "R", "W", "J", "Z", "L", "S"]
 
-def process_string(string):
+def process_lines(line_num):
     # do some processing on the string
-    processed_string = string
-    return processed_string
+    processed_lines = line_num
+    return processed_lines
 
-for string in strings:
-    line_id = process_string(string)
+for line_num in strings:
+    line_id = process_lines(line_num)
 
 def main():
-    for string in strings:
-        line_id = process_string(string)
+    for line_num in strings:
+        line_id = process_lines(line_num)
         line = [line_id]
         feed = NYCTFeed(line_id, api_key=MTA_API_KEY)
         print_feed(feed, line)
