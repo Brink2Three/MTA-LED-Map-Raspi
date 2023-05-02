@@ -25,26 +25,31 @@ line_nqrw = (252, 204, 10)
 line_ls = (128, 129, 131)
 bg = (5, 5, 5)
 
-strings = ["1", "2", "3", "4", "5", "6", "7", "A", "C", "E", "B", "D", "F", "M", "N", "Q", "R", "W", "J", "Z", "L", "S"]
+lines = ["1", "2", "3", "4", "5", "6", "7", "A", "C", "E", "B", "D", "F", "M", "N", "Q", "R", "W", "J", "Z", "L", "S"]
 
 def process_lines(line_num):
-    # do some processing on the string
+    # do some processing on the string because it won't work without it. idk
     processed_lines = line_num
     return processed_lines
 
-for line_num in strings:
+for line_num in lines:
     line_id = process_lines(line_num)
 
 def main():
-    for line_num in strings:
+    for line_num in lines:
         line_id = process_lines(line_num)
         line = [line_id]
         feed = NYCTFeed(line_id, api_key=MTA_API_KEY)
-        print_feed(feed, line)
+        # Without try, this will randomly fail if a stop at R60N or R60S is detected... This SHOULD negate that. 
+        try:
+            print_feed(feed, line)
+        except:
+            pass
 
 #Trying to extrapolate data so I can feed the stopped train's stations into a variable. 
 def print_feed(feed, line_id):
     for trip in feed.filter_trips(line_id):
+        #Stop check will randomly fail if R60N or R60S stop is stopped. Not sure why.
         stop_check = str(trip)
         if stop_check.__contains__("STOPPED_AT"):
             print(stop_check)
