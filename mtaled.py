@@ -26,15 +26,9 @@ line_ls = (128, 129, 131)
 bg = (5, 5, 5)
 
 lines = ["1", "2", "3", "4", "5", "6", "7", "A", "C", "E", "B", "D", "F", "M", "N", "Q", "R", "W", "J", "Z", "L", "S"]
-brokenstops = ["R60S", "R60N", "R65S", "R65N"]
-
-def process_lines(line_num):
-    # do some processing on the string because it won't work without it. idk
-    processed_lines = line_num
-    return processed_lines
-
-for line_num in lines:
-    line_id = process_lines(line_num)
+brokenstops = ["R60S", "R60N", "R65S", "R65N", "D23S", "D23N"]
+# Pseudo List of stops
+# Assign LED number to position of array
 
 def main():
     for line_num in lines:
@@ -44,7 +38,6 @@ def main():
         print_feed(feed, line)
 
 
-#Trying to extrapolate data so I can feed the stopped train's stations into a variable. 
 def print_feed(feed, line_id):
     for trip in feed.filter_trips(line_id):
         if trip.location in brokenstops:
@@ -53,6 +46,7 @@ def print_feed(feed, line_id):
             stop_check = str(trip)
             if stop_check.__contains__("STOPPED_AT"):
                 print(stop_check)
+                # Todo: Pull line and stop name out of string
             else:
                 pass
 
