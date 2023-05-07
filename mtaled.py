@@ -26,9 +26,15 @@ line_ls = (128, 129, 131)
 bg = (5, 5, 5)
 
 lines = ["1", "2", "3", "4", "5", "6", "7", "A", "C", "E", "B", "D", "F", "M", "N", "Q", "R", "W", "J", "Z", "L", "S"]
-brokenstops = ["R60S", "R60N", "R65S", "R65N", "D23S", "D23N"]
-# Pseudo List of stops
+brokenstops = ["R70N", "R70S", "R60S", "R60N", "R65S", "R65N", "D23S", "D23N"]
+lines_array = []
+stops_array = []
 # Assign LED number to position of array
+
+def process_lines(line_num):
+    processed_lines = line_num
+    return processed_lines
+
 
 def main():
     for line_num in lines:
@@ -37,7 +43,6 @@ def main():
         feed = NYCTFeed(line_id, api_key=MTA_API_KEY)
         print_feed(feed, line)
 
-
 def print_feed(feed, line_id):
     for trip in feed.filter_trips(line_id):
         if trip.location in brokenstops:
@@ -45,8 +50,13 @@ def print_feed(feed, line_id):
         else:
             stop_check = str(trip)
             if stop_check.__contains__("STOPPED_AT"):
-                print(stop_check)
-                # Todo: Pull line and stop name out of string
+                lines_array.append(stop_check[11:12])
+                stop_ind = stop_check.find('STOPPED_AT') + len('STOPPED_AT ')
+                last_ind = stop_check.find(', last update')
+                stops_array.append(stop_check[stop_ind:last_ind])
+                print(stops_array)
+                print(lines_array)
+                #print(stop_check)
             else:
                 pass
 
