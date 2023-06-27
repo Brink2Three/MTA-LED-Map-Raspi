@@ -1,7 +1,7 @@
 #Combined project, once all parts are complete.
 import time
-import board
-import neopixel
+#import board
+#import neopixel
 import os
 from datetime import datetime, timedelta
 from nyct_gtfs import NYCTFeed
@@ -65,33 +65,35 @@ if __name__ == '__main__':
         combined_array.append(str(lines_array[i] + " " + stops_array[i]))
     print(combined_array)
     #set all pixels to white
-    pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
-    pixels1.fill((15, 15, 15))
+    #pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
+    #pixels1.fill((15, 15, 15))
     #if string in combined array matches a possible stop, light up the LED for that location
-    if "1 Van Cortlandt Park-242 St" in combined_array:
-        print("Train at 242nd St, 1 Line")
-        pixels1[1] = line_123
-    elif "1 238 St" in combined_array:
-        print("Train at 238th St, 1 Line")
-        pixels1[2] = line_123
-    elif "1 231 St" in combined_array:
-        print("Train at 231st St, 1 Line")
-        pixels1[3] = line_123   
-    elif "1 191 St" in combined_array:
-        print("Train at 191st St, 1 Line")
-        pixels1[4] = line_123    
-    #for stop in possible_stops:
-    #    x = 0
-    #    stop = possible_stops[x]
-    #    if stop in combined_array:
-    #        pixels1[x] = line_123
-    #        stop = possible_stops[x]
-    #        x=x+1
-
+    #if "1 Van Cortlandt Park-242 St" in combined_array:
+    #    print("Train at 242nd St, 1 Line")
+    #    pixels1[1] = line_123
+    #elif "1 238 St" in combined_array:
+    #    print("Train at 238th St, 1 Line")
+    #    pixels1[2] = line_123
+    #elif "1 231 St" in combined_array:
+    #    print("Train at 231st St, 1 Line")
+    #    pixels1[3] = line_123   
+    #elif "1 191 St" in combined_array:
+    #    print("Train at 191st St, 1 Line")
+    #    pixels1[4] = line_123    
+    for stop in possible_stops:
+        x = 0
+        stop = possible_stops[x]
+        if stop in combined_array:
+            print(stop)
+            #pixels1[x] = line_123
+            stop = possible_stops[x]
+            x=x+1
+        else:
+            ()
     
     # temp while testing to not use extra power
-    time.sleep(25)
-    pixels1.fill((0, 0, 0))
+    # time.sleep(25)
+    # pixels1.fill((0, 0, 0))
     
 
 else: 
