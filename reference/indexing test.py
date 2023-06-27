@@ -1068,8 +1068,8 @@ if __name__ == '__main__':
         ()
     
     # temp while testing to not use extra power
-     time.sleep(10)
-     pixels1.fill((0, 0, 0))
+    time.sleep(10)
+    pixels1.fill((0, 0, 0))
     
 
 else: 
