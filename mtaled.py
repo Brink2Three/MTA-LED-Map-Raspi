@@ -11,8 +11,8 @@ load_dotenv()
 MTA_API_KEY = os.getenv('api_key')
 
 
-#NEOPIXEL SETTINGS
-pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
+#NEOPIXEL SETTINGS MUST BE SET BELOW
+#pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
 # Line colors so I don't have to type the codes out
 line_123 = (127, 0, 0)
 line_456 = (0, 127, 7)
@@ -86,6 +86,7 @@ if __name__ == '__main__':
     
     
     time.sleep(25)
+    pixels1.fill((0, 0, 0))
     
 
 else: 
