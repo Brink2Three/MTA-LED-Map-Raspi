@@ -63,9 +63,10 @@ if __name__ == '__main__':
     main()
     for i in range(len(lines_array)): 
         combined_array.append(str(lines_array[i] + " " + stops_array[i]))
-    #print(combined_array)
+    print(combined_array)
     #set all pixels to white
-    pixels1 = bg
+    pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
+    pixels1.fill((15, 15, 15))
     #if string in combined array matches a possible stop, light up the LED for that location
     if "1 Van Cortlandt Park-242 St" in combined_array:
         print("Train at 242nd St, 1 Line")
@@ -79,6 +80,12 @@ if __name__ == '__main__':
     elif "1 191 St" in combined_array:
         print("Train at 191st St, 1 Line")
         pixels1[4] = line_123    
+    #for stop in possible_stops:
+    #    stop = possible_stops[stop]
+    #    print
+    
+    
+    time.sleep(25)
     
 
 else: 
