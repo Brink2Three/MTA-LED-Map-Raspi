@@ -1,7 +1,7 @@
 #Combined project, once all parts are complete.
 import time
-#import board
-#import neopixel
+import board
+import neopixel
 import os
 from datetime import datetime, timedelta
 from nyct_gtfs import NYCTFeed
