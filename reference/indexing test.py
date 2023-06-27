@@ -1064,12 +1064,12 @@ if __name__ == '__main__':
         pixels1[496]= line_ls
     elif "S St George" in combined_array:
         pixels1[497]= line_ls
-        else:
+    else:
         ()
     
     # temp while testing to not use extra power
-    # time.sleep(25)
-    # pixels1.fill((0, 0, 0))
+     time.sleep(10)
+     pixels1.fill((0, 0, 0))
     
 
 else: 
