@@ -69,7 +69,7 @@ if __name__ == '__main__':
     #set all pixels to white
     pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
     pixels1.fill((15, 15, 15))
-    #This method stops at the first passing if statement and skips to the end.. I need it to check each of them.
+    #mother of all regex edits
     if "1 Van Cortlandt Park-242 St" in combined_array:
         pixels1[1]= line_123
     else:
