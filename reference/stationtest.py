@@ -3,7 +3,7 @@ import time
 import board
 import neopixel
 
-pixels1 = neopixel.NeoPixel(board.D18, 85, brightness=.20)
+pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=.20)
 
 x=0
 
@@ -23,7 +23,8 @@ pixels1.fill((25, 25, 25))
 time.sleep(3)
 
 pixels1[0] = line_123
-pixels1[4] = line_123
+pixels1[1] = line_123 # Missing LED #1
+pixels1[2] = line_123 # Missing LED #2
 pixels1[17] = line_123
 pixels1[19] = line_123
 pixels1[20] = line_123
@@ -56,7 +57,10 @@ pixels1[81] = line_ace
 pixels1[57] = line_7
 pixels1[11] = line_bdfm
 pixels1[12] = line_jz
+pixels1[4] = line_nqrw
+pixels1[7] = line_nqrw
 pixels1[13] = line_nqrw
+
 pixels1[14] = line_ls
 
 time.sleep(10)

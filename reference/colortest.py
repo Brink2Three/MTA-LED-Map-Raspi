@@ -3,7 +3,7 @@ import time
 import board
 import neopixel
 
-pixels1 = neopixel.NeoPixel(board.D18, 85, brightness=.20)
+pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=.20)
 
 x=0
 
@@ -22,113 +22,117 @@ pixels1.fill((25, 25, 25))
 
 time.sleep(3)
 
-print( "123 is currently shown")
-while x<85:
-    pixels1[x] = line_123
-    pixels1[x-5] = bg
-    x=x+1
-    time.sleep(0.5)
-x=0
-print( "456 is currently shown")
-while x<85:
-    pixels1[x] = line_456
-    pixels1[x-5] = bg
-    x=x+1
-    time.sleep(0.5)
-x=0
+while True:
+    print( "123 is currently shown")
+    while x<87:
+        pixels1[x] = line_123
+        pixels1[x-5] = bg
+        x=x+1
+        time.sleep(0.5)
+    x=0
+    print( "456 is currently shown")
+    while x<87:
+        pixels1[x] = line_456
+        pixels1[x-5] = bg
+        x=x+1
+        time.sleep(0.5)
+    x=0
 
-print( "ACE is currently shown")
-while x<85:
-    pixels1[x] = line_ace
-    pixels1[x-5] = bg
-    x=x+1
-    time.sleep(0.5)
-x=0
+    print( "ACE is currently shown")
+    while x<87:
+        pixels1[x] = line_ace
+        pixels1[x-5] = bg
+        x=x+1
+        time.sleep(0.5)
+    x=0
 
-print( "7 is currently shown")
-while x<85:
-    pixels1[x] = line_7
-    pixels1[x-5] = bg
-    x=x+1
-    time.sleep(0.5)
-x=0
+    print( "7 is currently shown")
+    while x<87:
+        pixels1[x] = line_7
+        pixels1[x-5] = bg
+        x=x+1
+        time.sleep(0.5)
+    x=0
 
-print( "BDFM is currently shown")
-while x<85:
-    pixels1[x] = line_bdfm
-    pixels1[x-5] = bg
-    x=x+1
-    time.sleep(0.5)
-x=0
+    print( "BDFM is currently shown")
+    while x<87:
+        pixels1[x] = line_bdfm
+        pixels1[x-5] = bg
+        x=x+1
+        time.sleep(0.5)
+    x=0
 
-print( "JZ is currently shown")
-while x<85:
-    pixels1[x] = line_jz
-    pixels1[x-5] = bg
-    x=x+1
-    time.sleep(0.5)
-x=0
+    print( "JZ is currently shown")
+    while x<87:
+        pixels1[x] = line_jz
+        pixels1[x-5] = bg
+        x=x+1
+        time.sleep(0.5)
+    x=0
 
-print( "NQRW is currently shown")
-while x<85:
-    pixels1[x] = line_nqrw
-    pixels1[x-5] = bg
-    x=x+1
-    time.sleep(0.5)
-x=0
+    print( "NQRW is currently shown")
+    while x<87:
+        pixels1[x] = line_nqrw
+        pixels1[x-5] = bg
+        x=x+1
+        time.sleep(0.5)
+    x=0
 
-print( "LS is currently shown")
-while x<85:
-    pixels1[x] = line_ls
-    pixels1[x-5] = bg
-    x=x+1
-    time.sleep(0.5)
-x=0
+    print( "LS is currently shown")
+    while x<87:
+        pixels1[x] = line_ls
+        pixels1[x-5] = bg
+        x=x+1
+        time.sleep(0.5)
+    x=0
 
-time.sleep(5)
+    time.sleep(5)
 
-pixels1.fill((0, 0, 0))
+    pixels1.fill((0, 0, 0))
 
-time.sleep(0.25)
+    time.sleep(0.25)
 
-pixels1[0] = line_123
-pixels1[4] = line_123
-pixels1[17] = line_123
-pixels1[19] = line_123
-pixels1[20] = line_123
-pixels1[32] = line_123
-pixels1[38] = line_123
-pixels1[46] = line_123
-pixels1[48] = line_123
-pixels1[50] = line_123
-pixels1[56] = line_123
-pixels1[59] = line_123
-pixels1[65] = line_123
-pixels1[68] = line_123
-pixels1[80] = line_123
-pixels1[82] = line_123
+    pixels1[0] = line_123
+    pixels1[1] = line_123 # Missing LED #1
+    pixels1[2] = line_123 # Missing LED #2
+    pixels1[17] = line_123
+    pixels1[19] = line_123
+    pixels1[20] = line_123
+    pixels1[32] = line_123
+    pixels1[38] = line_123
+    pixels1[46] = line_123
+    pixels1[48] = line_123
+    pixels1[50] = line_123
+    pixels1[56] = line_123
+    pixels1[59] = line_123
+    pixels1[65] = line_123
+    pixels1[68] = line_123
+    pixels1[80] = line_123
+    pixels1[82] = line_123
 
-pixels1[2] = line_456
-pixels1[5] = line_456
-pixels1[12] = line_ace
-pixels1[18] = line_ace
-pixels1[21] = line_ace
-pixels1[31] = line_ace
-pixels1[37] = line_ace
-pixels1[47] = line_ace
-pixels1[49] = line_ace
-pixels1[58] = line_ace
-pixels1[66] = line_ace
-pixels1[67] = line_ace
-pixels1[81] = line_ace
+    pixels1[2] = line_456
+    pixels1[5] = line_456
+    pixels1[12] = line_ace
+    pixels1[18] = line_ace
+    pixels1[21] = line_ace
+    pixels1[31] = line_ace
+    pixels1[37] = line_ace
+    pixels1[47] = line_ace
+    pixels1[49] = line_ace
+    pixels1[58] = line_ace
+    pixels1[66] = line_ace
+    pixels1[67] = line_ace
+    pixels1[81] = line_ace
 
-pixels1[57] = line_7
-pixels1[11] = line_bdfm
-pixels1[12] = line_jz
-pixels1[13] = line_nqrw
-pixels1[14] = line_ls
+    pixels1[57] = line_7
+    pixels1[11] = line_bdfm
+    pixels1[12] = line_jz
+    pixels1[4] = line_nqrw
+    pixels1[7] = line_nqrw
+    pixels1[13] = line_nqrw
 
-time.sleep(10)
+    pixels1[14] = line_ls
 
-pixels1.fill((0, 0, 0))
+    time.sleep(10)
 
+    pixels1.fill((0, 0, 0))

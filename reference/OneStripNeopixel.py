@@ -3,7 +3,7 @@ import time
 import board
 import neopixel
 
-pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
+pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=.15)
 
 x=0
 

@@ -12,7 +12,7 @@ MTA_API_KEY = os.getenv('api_key')
 
 
 #NEOPIXEL SETTINGS MUST BE SET BELOW
-#pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
+#pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=.15)
 # Line colors so I don't have to type the codes out
 line_123 = (127, 0, 0)
 line_456 = (0, 127, 7)
@@ -65,7 +65,7 @@ if __name__ == '__main__':
         combined_array.append(str(lines_array[i] + " " + stops_array[i]))
     print(combined_array)
     #set all pixels to white
-    pixels1 = neopixel.NeoPixel(board.D18, 180, brightness=.15)
+    pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=.15)
     pixels1.fill((15, 15, 15))
     #mother of all regex edits
     if "1 Van Cortlandt Park-242 St" in combined_array:
