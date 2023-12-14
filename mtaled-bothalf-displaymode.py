@@ -481,11 +481,6 @@ if __name__ == '__main__':
         pixels1[3]= line_nqrw
     else:
         ()
-    
-    # temp while testing to not use extra power
-    time.sleep(120)
-    pixels1.fill((0, 0, 0))
-    
 
 else: 
     ()
