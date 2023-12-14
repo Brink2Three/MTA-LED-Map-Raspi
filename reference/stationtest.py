@@ -37,8 +37,8 @@ pixels1[58] = line_123
 pixels1[61] = line_123
 pixels1[67] = line_123
 pixels1[70] = line_123
-pixels1[81] = line_123
-pixels1[83] = line_123
+pixels1[82] = line_123
+pixels1[84] = line_123
 
 pixels1[4] = line_456
 pixels1[7] = line_456
