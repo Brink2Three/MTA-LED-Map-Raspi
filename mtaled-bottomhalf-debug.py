@@ -1,7 +1,7 @@
 #Combined project, once all parts are complete.
 import time
-import board
-import neopixel
+#import board
+#import neopixel
 import os
 from datetime import datetime, timedelta
 from nyct_gtfs import NYCTFeed
@@ -55,7 +55,6 @@ def print_feed(feed, line_id):
                 stop_ind = stop_check.find('STOPPED_AT') + len('STOPPED_AT ')
                 last_ind = stop_check.find(', last update')
                 stops_array.append(stop_check[stop_ind:last_ind])
-                #print(stop_check[11:12] + " " + stop_check[stop_ind:last_ind])
             else:
                 pass
 
@@ -63,328 +62,328 @@ if __name__ == '__main__':
     main()
     for i in range(len(lines_array)): 
         combined_array.append(str(lines_array[i] + " " + stops_array[i]))
-    print(combined_array)
+    #print(combined_array)
     #set all pixels to white
-    pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=.15)
-    pixels1.fill((15, 15, 15))
+    #pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=.15)
+    #pixels1.fill((15, 15, 15))
     ###### 1 Line ##########
     if "1 66 St-Lincoln Center" in combined_array:
-        pixels1[84]= line_123
+        print(84)
     else:
         pass
     if "1 59 St-Columbus Circle" in combined_array:
-        pixels1[82]= line_123
+        print(82)
     else:
         pass
     if "1 50 St" in combined_array:
-        pixels1[70]= line_123
+        print(70)
     else:
         pass
     if "1 Times Sq-42 St" in combined_array:
-        pixels1[67]= line_123
+        print(67)
     else:
         pass
     if "1 34 St-Penn Station" in combined_array:
-        pixels1[61]= line_123
+        print(61)
     else:
         pass
     if "1 28 St" in combined_array:
-        pixels1[58]= line_123
+        print(58)
     else:
         pass
     if "1 23 St" in combined_array:
-        pixels1[52]= line_123
+        print(52)
     else:
         pass
     if "1 18 St" in combined_array:
-        pixels1[50]= line_123
+        print(50)
     else:
         pass
     if "1 14 St" in combined_array:
-        pixels1[48]= line_123
+        print(48)
     else:
         pass
     if "1 Christopher St-Sheridan Sq" in combined_array:
-        pixels1[40]= line_123
+        print(40)
     else:
         pass
     if "1 Houston St" in combined_array:
-        pixels1[34]= line_123
+        print(34)
     else:
         pass
     if "1 Canal St" in combined_array:
-        pixels1[22]= line_123
+        print(22)
     else:
         pass
     if "1 Franklin St" in combined_array:
-        pixels1[21]= line_123
+        print(21)
     else:
         pass
     if "1 Chambers St" in combined_array:
-        pixels1[19]= line_123
+        print(19)
     else:
         pass
     if "1 WTC Cortlandt" in combined_array:
-        pixels1[0]= line_123
+        print(0)
     else:
         pass
     if "1 Rector St" in combined_array:
-        pixels1[5]= line_123
+        print(5)
     else:
         pass
     if "1 South Ferry Loop" in combined_array:
-        pixels1[2]= line_123
+        print(2)
     else:
         pass
     if "1 South Ferry" in combined_array:
-        pixels1[2]= line_123
+        print(2)
     else:
         pass
     ###### 2 Line #######
     if "2 Park Place" in combined_array:
-        pixels1[64]= line_123
+        print(64)
     else:
         pass
     if "2 Fulton St" in combined_array:
-        pixels1[65]= line_123
+        print(65)
     else:
         pass
     if "2 Wall St" in combined_array:
-        pixels1[4]= line_123
+        print(4)
     else:
         pass
     ##### 4 Line ######
     if "4 Fulton St" in combined_array:
-        pixels1[10]= line_456
+        print(10)
     else:
         pass
     if "4 Wall St" in combined_array:
-        pixels1[7]= line_456
+        print(7)
     else:
         pass
     if "4 Bowling Green" in combined_array:
-        pixels1[4]= line_456
+        print(4)
     else:
         pass
 ##### 6 Line #####
     if "6 68 St-Hunter College" in combined_array:
-        pixels1[86]= line_456
+        print(86)
     else:
         pass
     if "6 59 St" in combined_array:
-        pixels1[77]= line_456
+        print(77)
     else:
         pass
     if "6 51 St" in combined_array:
-        pixels1[74]= line_456
+        print(74)
     else:
         pass
     if "6 Grand Central-42 St" in combined_array:
-        pixels1[64]= line_456
+        print(64)
     else:
         pass
     if "6 33 St" in combined_array:
-        pixels1[63]= line_456
+        print(63)
     else:
         pass
     if "6 28 St" in combined_array:
-        pixels1[56]= line_456
+        print(56)
     else:
         pass
     if "6 23 St" in combined_array:
-        pixels1[54]= line_456
+        print(54)
     else:
         pass
     if "6 14 St-Union Sq" in combined_array:
-        pixels1[45]= line_456
+        print(45)
     else:
         pass
     if "6 Astor Pl" in combined_array:
-        pixels1[42]= line_456
+        print(42)
     else:
         pass
     if "6 Bleecker St" in combined_array:
-        pixels1[37]= line_456
+        print(37)
     else:
         pass
     if "6 Spring St" in combined_array:
-        pixels1[32]= line_456
+        print(32)
     else:
         pass
     if "6 Canal St" in combined_array:
-        pixels1[25]= line_456
+        print(25)
     else:
         pass
     if "6 Brooklyn Bridge-City Hall" in combined_array:
-        pixels1[17]= line_456
+        print(17)
     else:
         pass
 ##### 7 Line #####   
     if "7 Grand Central-42 St" in combined_array:
-        pixels1[64]= line_7
+        print(64)
     else:
         pass
     if "7 5 Av" in combined_array:
-        pixels1[65]= line_7
+        print(65)
     else:
         pass
     if "7 Times Sq-42 St" in combined_array:
-        pixels1[67]= line_7
+        print(67)
     else:
         pass
     if "7 34 St-Hudson Yards" in combined_array:
-        pixels1[59]= line_7
+        print(59)
     else:
         pass
 ##### S line (Times-GCS Shuttle) #####    
     if "S Grand Central-42 St" in combined_array:
-        pixels1[64]= line_ls
+        print(64)
     else:
         pass
     if "S Times Sq-42 St" in combined_array:
-        pixels1[67]= line_ls
+        print(67)
     else:
         pass
 ##### A Line #####
     if "A 59 St-Columbus Circle" in combined_array:
-        pixels1[83]= line_ace
+        print(83)
     else:
         pass
     if "A 50 St" in combined_array:
-        pixels1[69]= line_ace
+        print(69)
     else:
         pass
     if "A 42 St-Port Authority Bus Terminal" in combined_array:
-        pixels1[68]= line_ace
+        print(68)
     else:
         pass
     if "A 34 St-Penn Station" in combined_array:
-        pixels1[60]= line_ace
+        print(60)
     else:
         pass
     if "A 23 St" in combined_array:
-        pixels1[51]= line_ace
+        print(51)
     else:
         pass
     if "A 14 St" in combined_array:
-        pixels1[49]= line_ace
+        print(49)
     else:
         pass
     if "A W 4 St-Wash Sq" in combined_array:
-        pixels1[39]= line_ace
+        print(39)
     else:
         pass
     if "A Spring St" in combined_array:
-        pixels1[33]= line_ace
+        print(33)
     else:
         pass
     if "A Canal St" in combined_array:
-        pixels1[23]= line_ace
+        print(23)
     else:
         pass
     if "A Chambers St" in combined_array:
-        pixels1[20]= line_ace
+        print(20)
     else:
         pass
     if "A Fulton St" in combined_array:
-        pixels1[11]= line_ace
+        print(11)
     else:
         pass
 ##### E Line #####
     if "E World Trade Center" in combined_array:
-        pixels1[14]= line_ace
+        print(14)
     else:
         pass
 ##### B Line
     if "B Lexington Av/63 St" in combined_array:
-        pixels1[84]= line_bdfm
+        print(84)
     else:
         pass
     if "B 57 St" in combined_array:
-        pixels1[79]= line_bdfm
+        print(79)
     else:
         pass
 ##### D Line 
     if "D 7 Av" in combined_array:
-        pixels1[80]= line_bdfm
+        print(80)
     else:
         pass
     if "D 47-50 Sts-Rockefeller Ctr" in combined_array:
-        pixels1[72]= line_bdfm
+        print(72)
     else:
         pass
     if "D 42 St-Bryant Pk" in combined_array:
-        pixels1[66]= line_bdfm
+        print(66)
     else:
         pass
     if "D 34 St-Herald Sq" in combined_array:
-        pixels1[62]= line_bdfm
+        print(62)
     else:
         pass
     if "D 23 St" in combined_array:
-        pixels1[53]= line_bdfm
+        print(53)
     else:
         pass
     if "D 14 St" in combined_array:
-        pixels1[47]= line_bdfm
+        print(47)
     else:
         pass
     if "D W 4 St-Wash Sq" in combined_array:
-        pixels1[39]= line_bdfm
+        print(39)
     else:
         pass
     if "D Broadway-Lafayette St" in combined_array:
-        pixels1[36]= line_bdfm
+        print(36)
     else:
         pass
     if "D Grand St" in combined_array:
-        pixels1[27]= line_bdfm
+        print(27)
     else:
         pass
 ##### F Line #####
     if "F Lexington Av/53 St" in combined_array:
-        pixels1[75]= line_bdfm
+        print(75)
     else:
         pass
     if "F 5 Av/53 St" in combined_array:
-        pixels1[73]= line_bdfm
+        print(73)
     else:
         pass
     if "F 2 Av" in combined_array:
-        pixels1[38]= line_bdfm
+        print(38)
     else:
         pass
     if "F Delancey St-Essex St" in combined_array:
-        pixels1[30]= line_bdfm
+        print(30)
     else:
         pass
     if "F East Broadway" in combined_array:
-        pixels1[28]= line_bdfm
+        print(28)
     else:
         pass
 ##### J or Z trains labeled as their old M stops #####
     if "M Delancey St-Essex St" in combined_array:
-        pixels1[29]= line_bdfm
+        print(29)
     else:
         pass
     if "M Bowery" in combined_array:
-        pixels1[31]= line_bdfm
+        print(31)
     else:
         pass
     if "M Canal St" in combined_array:
-        pixels1[26]= line_bdfm
+        print(26)
     else:
         pass
     if "M Chambers St" in combined_array:
-        pixels1[18]= line_bdfm
+        print(18)
     else:
         pass
     if "M Fulton St" in combined_array:
-        pixels1[12]= line_bdfm
+        print(12)
     else:
         pass
     if "M Broad St" in combined_array:
-        pixels1[5]= line_bdfm
+        print(5)
     else:
         pass
 ##### J Line #####
@@ -392,23 +391,23 @@ if __name__ == '__main__':
 
 ##### L Line #####
     if "L 8 Av" in combined_array:
-        pixels1[49]= line_ls
+        print(49)
     else:
         pass
     if "L 6 Av" in combined_array:
-        pixels1[47]= line_ls
+        print(47)
     else:
         pass
     if "L 14 St-Union Sq" in combined_array:
-        pixels1[45]= line_ls
+        print(45)
     else:
         pass
     if "L 3 Av" in combined_array:
-        pixels1[44]= line_ls
+        print(44)
     else:
         pass
     if "L 1 Av" in combined_array:
-        pixels1[43]= line_ls
+        print(43)
     else:
         pass
 ##### N Line #####    
@@ -416,79 +415,79 @@ if __name__ == '__main__':
 
 ##### Q Line #####
     if "Q Canal St" in combined_array:
-        pixels1[24]= line_nqrw
+        print(24)
     else:
         pass
 ##### R Line #####
     if "R Lexington Av/59 St" in combined_array:
-        pixels1[76]= line_nqrw
+        print(76)
     else:
         pass
     if "R 5 Av/59 St" in combined_array:
-        pixels1[78]= line_nqrw
+        print(78)
     else:
         pass
     if "R 57 St-7 Av" in combined_array:
-        pixels1[81]= line_nqrw
+        print(81)
     else:
         pass
     if "R 49 St" in combined_array:
-        pixels1[71]= line_nqrw
+        print(71)
     else:
         pass
     if "R Times Sq-42 St" in combined_array:
-        pixels1[67]= line_nqrw
+        print(67)
     else:
         pass
     if "R 34 St-Herald Sq" in combined_array:
-        pixels1[62]= line_nqrw
+        print(62)
     else:
         pass
     if "R 28 St" in combined_array:
-        pixels1[57]= line_nqrw
+        print(57)
     else:
         pass
     if "R 23 St" in combined_array:
-        pixels1[54]= line_nqrw
+        print(54)
     else:
         pass
     if "R 14 St-Union Sq" in combined_array:
-        pixels1[46]= line_nqrw
+        print(46)
     else:
         pass
     if "R 8 St-NYU" in combined_array:
-        pixels1[41]= line_nqrw
+        print(41)
     else:
         pass
     if "R Prince St" in combined_array:
-        pixels1[35]= line_nqrw
+        print(35)
     else:
         pass
     if "R Canal St" in combined_array:
-        pixels1[24]= line_nqrw
+        print(24)
     else:
         pass
     if "R City Hall" in combined_array:
-        pixels1[16]= line_nqrw
+        print(16)
     else:
         pass
     if "R Cortlandt St" in combined_array:
-        pixels1[9]= line_nqrw
+        print(9)
     else:
         pass
     if "R Rector St" in combined_array:
-        pixels1[6]= line_nqrw
+        print(6)
     else:
         pass
     if "R Whitehall St-South Ferry" in combined_array:
-        pixels1[3]= line_nqrw
+        print(3)
     else:
         ()
 ##### SF Line #####
 # None in Manhattan
     # temp while testing to not use extra power
     time.sleep(10)
-    pixels1.fill((0, 0, 0))
+    #pixels1.fill((0, 0, 0))
     
 
 else: 

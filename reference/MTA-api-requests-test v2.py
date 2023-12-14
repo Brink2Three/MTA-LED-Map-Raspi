@@ -14,6 +14,7 @@ line_id = "1"
 def main():
     line = [line_id]
     feed = NYCTFeed(line_id, api_key=MTA_API_KEY)
+    print(MTA_API_KEY)
     print_feed(feed, line)
 
 #Trying to extrapolate data so I can feed the stopped train's stations into a variable. 
