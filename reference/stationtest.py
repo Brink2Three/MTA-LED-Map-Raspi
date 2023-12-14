@@ -25,43 +25,43 @@ time.sleep(3)
 pixels1[0] = line_123
 pixels1[1] = line_123 # Missing LED #1
 pixels1[2] = line_123 # Missing LED #2
-pixels1[17] = line_123
 pixels1[19] = line_123
-pixels1[20] = line_123
-pixels1[32] = line_123
-pixels1[38] = line_123
-pixels1[46] = line_123
+pixels1[21] = line_123
+pixels1[22] = line_123
+pixels1[34] = line_123
+pixels1[40] = line_123
 pixels1[48] = line_123
 pixels1[50] = line_123
-pixels1[56] = line_123
-pixels1[59] = line_123
-pixels1[65] = line_123
-pixels1[68] = line_123
-pixels1[80] = line_123
-pixels1[82] = line_123
+pixels1[52] = line_123
+pixels1[58] = line_123
+pixels1[61] = line_123
+pixels1[67] = line_123
+pixels1[70] = line_123
+pixels1[81] = line_123
+pixels1[83] = line_123
 
-pixels1[2] = line_456
-pixels1[5] = line_456
-pixels1[12] = line_ace
-pixels1[18] = line_ace
-pixels1[21] = line_ace
-pixels1[31] = line_ace
-pixels1[37] = line_ace
-pixels1[47] = line_ace
+pixels1[4] = line_456
+pixels1[7] = line_456
+pixels1[14] = line_ace
+pixels1[20] = line_ace
+pixels1[23] = line_ace
+pixels1[33] = line_ace
+pixels1[39] = line_ace
 pixels1[49] = line_ace
-pixels1[58] = line_ace
-pixels1[66] = line_ace
-pixels1[67] = line_ace
-pixels1[81] = line_ace
+pixels1[51] = line_ace
+pixels1[60] = line_ace
+pixels1[68] = line_ace
+pixels1[69] = line_ace
+pixels1[83] = line_ace
 
-pixels1[57] = line_7
-pixels1[11] = line_bdfm
-pixels1[12] = line_jz
-pixels1[4] = line_nqrw
-pixels1[7] = line_nqrw
-pixels1[13] = line_nqrw
+pixels1[59] = line_7
+pixels1[13] = line_bdfm
+pixels1[14] = line_jz
+pixels1[5] = line_nqrw
+pixels1[9] = line_nqrw
+pixels1[15] = line_nqrw
 
-pixels1[14] = line_ls
+pixels1[16] = line_ls
 
 time.sleep(10)
 
