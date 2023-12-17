@@ -1,3 +1,5 @@
+## TO DO: Change if stop_check.__contains__("STOPPED_AT"): to include arriving at.
+# Since trains are not stopped at stations very long, this will add more colors
 #Combined project, once all parts are complete.
 import time
 import board
@@ -143,11 +145,11 @@ if __name__ == '__main__':
         pass
     ###### 2 Line #######
     if "2 Park Place" in combined_array:
-        pixels1[64]= line_123
+        pixels1[15]= line_123
     else:
         pass
     if "2 Fulton St" in combined_array:
-        pixels1[65]= line_123
+        pixels1[13]= line_123
     else:
         pass
     if "2 Wall St" in combined_array:

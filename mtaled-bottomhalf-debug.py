@@ -41,6 +41,7 @@ def main():
     for line_num in lines:
         line_id = process_lines(line_num)
         line = [line_id]
+        print("Reading MTA Feed the " + line_id + " Trains...")
         feed = NYCTFeed(line_id, api_key=MTA_API_KEY)
         print_feed(feed, line)
 
