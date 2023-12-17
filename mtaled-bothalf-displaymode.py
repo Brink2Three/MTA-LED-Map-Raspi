@@ -363,27 +363,27 @@ if __name__ == '__main__':
         pass
 ##### J or Z trains labeled as their old M stops #####
     if "M Delancey St-Essex St" in combined_array:
-        pixels1[29]= line_bdfm
+        pixels1[29]= line_jz
     else:
         pass
     if "M Bowery" in combined_array:
-        pixels1[31]= line_bdfm
+        pixels1[31]= line_jz
     else:
         pass
     if "M Canal St" in combined_array:
-        pixels1[26]= line_bdfm
+        pixels1[26]= line_jz
     else:
         pass
     if "M Chambers St" in combined_array:
-        pixels1[18]= line_bdfm
+        pixels1[18]= line_jz
     else:
         pass
     if "M Fulton St" in combined_array:
-        pixels1[12]= line_bdfm
+        pixels1[12]= line_jz
     else:
         pass
     if "M Broad St" in combined_array:
-        pixels1[5]= line_bdfm
+        pixels1[5]= line_jz
     else:
         pass
 ##### J Line #####
