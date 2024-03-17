@@ -6,10 +6,10 @@ A single python file that will pull NYC-MTA GTFS data and assign it to individua
 ## To make this yourself:
 
 ### Parts: 
-Raspberry Pi (I used a Zero 1 Wi-Fi)
-a 5V 8A Power supply
-Dupont connectors (for connecting power supply to board/Raspi)
-A board, ordered from JCLPCB, PCBway or any PCB order vendor. (see Maps/PCB Gerber Files)
+- Raspberry Pi (I used a Zero 1 Wi-Fi)
+- a 5V 8A Power supply
+- Dupont connectors (for connecting power supply to board/Raspi)
+- A board, ordered from JCLPCB, PCBway or any PCB order vendor. (see Maps/PCB Gerber Files)
 
 
 ### Software Steps: 
