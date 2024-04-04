@@ -21,13 +21,13 @@ Only the requests testing will work on windows, as the LED code will attempt to 
 Install the following dependancies as root. No you cannot install them in a virtual environment. They need root access to use the GPIO pins.
 
 ```
-pip install rpi_ws281x
-pip install adafruit-circuitpython-neopixel
-python3 -m pip install --force-reinstall adafruit-blinka
-pip install time
-pip install datetime
-pip install nyct_gtfs
-pip install python-dotenv
+sudo pip install rpi_ws281x
+sudo pip install adafruit-circuitpython-neopixel
+sudo python3 -m pip install --force-reinstall adafruit-blinka
+sudo pip install time
+sudo pip install datetime
+sudo pip install nyct_gtfs
+sudo pip install python-dotenv
 ```
 
 You can ignore warnings about any scripts not being in PATH. 
