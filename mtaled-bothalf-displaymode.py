@@ -4,14 +4,10 @@
 import time
 import board
 import neopixel
-import os
 from datetime import datetime, timedelta
 from nyct_gtfs import NYCTFeed
-from dotenv import load_dotenv
-load_dotenv()
 
-MTA_API_KEY = os.getenv('api_key')
-
+# Version 2 of nyct_gtfs removed the need for API keys: https://pypi.org/project/nyct-gtfs/
 
 #NEOPIXEL SETTINGS MUST BE SET BELOW
 #pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=.15)
@@ -44,7 +40,7 @@ def main():
         line_id = process_lines(line_num)
         line = [line_id]
         print("Reading MTA Feed the " + line_id + " Trains...")
-        feed = NYCTFeed(line_id, api_key=MTA_API_KEY)
+        feed = NYCTFeed(line_id)
         print_feed(feed, line)
 
 def print_feed(feed, line_id):
