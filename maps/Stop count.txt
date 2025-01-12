@@ -1,0 +1,57 @@
+---Manhattan: 142
+
+
+Lower half: 89
+stops to 66 st 1, 68st Hunter 6, NOT INCL 72st:
+
+89
+
+Upper half: 53 (90-142)
+72 st and up, incl Roosevelt Island: 
+
+Orange: 1
+Yellow: 3
+Green: 7
+Red: 16 + 6 (skips shared stop at 168 st w red)
+Orange: 11 (incl running alongside Blue till 145)
+Blue: 9  (Stop counting incl dual stop at 145 st - shared with orange)
+
+---The Bronx: 71 (143-213)
+
+Green: 14 + 5 + 18 (not incl shared stops with red 2) 
+Red: 4 + 20 (incl shared stops with green 5)
+Orange: 10
+
+
+---Queens: 58 (214-271)
+
+G TR: 2
+Purple: 18 (incl shared stops at queensboro, Court Sq)
+Yellow: 18 (not incl Queensboro, incl Jackson Hts)
+Green: 0
+Red: 0
+Orange: 14 (incl shared stops at Briarwood, 2x at Forest Hills, 2x Jackson Hts, Queens Plaza)
+Blue: 6 (not incl shared stops at Court Sq-23rd, Briarwood, 
+
+---Brooklyn: 
+
+Upper half: 93 (272-364)
+G TR: 7
+Gray: 19 (incl shared stop at Myrtle-Wyckoff)
+Orange: 10 (incl shared stops at Marcy,  Hewes, Lorimer, Flushing, Myrtle, not counting Myrtle-Wickoff)
+Brown: 17 (not counting shared stops at Marcy,  Hewes, Lorimer, Flushing, Myrtle)
+Blue: 11 + 20
+Red: 8
+Green: 1
+S TR: 1 (not incl shared beach stops)
+
+Lower half: 102 (365-466)
+G TR: 12
+Yellow: 18 + 26 = 44 / 16 + 14 + 14 = 44
+Red: 16  
+Orange: 12 + 10 + 1 = 23 (not incl shared stops with G, yellow) 
+Blue: 4 ( not incl shared stops with G, Orange)
+S TR: 3 (not incl shared stop with blue)
+
+
+466 total LEDs

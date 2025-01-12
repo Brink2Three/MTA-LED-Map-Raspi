@@ -34,7 +34,7 @@ sudo pip install nyct_gtfs
 
 You can ignore warnings about any scripts not being in PATH.
 
-Clone this repo to the raspberry pi, running raspbian (raspberry piOS) lite or ubuntu server.
+Clone this repo to the raspberry pi, running raspbian 11 (raspberry piOS lite) or ubuntu server. The exact version I am running is `Raspbian GNU/Linux 11 (bullseye)`
 
 Depending on what boards you have connected, run the related "displaymode.py" script.
 *THIS WILL TAKE A MINUTE TO UPDATE.*
