@@ -6,9 +6,9 @@ import board
 import neopixel
 from datetime import datetime, timedelta
 from nyct_gtfs import NYCTFeed
+import argparse
 
 # Version 2 of nyct_gtfs removed the need for API keys: https://pypi.org/project/nyct-gtfs/
-
 #NEOPIXEL SETTINGS MUST BE SET BELOW
 # Line colors so I don't have to type the codes out
 line_123 = (127, 0, 0)
@@ -174,14 +174,28 @@ def print_feed(feed, line_id):
                 pass
 
 if __name__ == '__main__':
+    # Get brightness from CMD Line arg
+    parser = argparse.ArgumentParser(
+        description="Brightness controlled MTA map"
+    )
+    parser.add_argument(
+        "-b",
+        "--brightness",
+        type=float,
+        default=0.25,
+        help="Brightness of the LEDs (0.0 to 1.0). Default is 0.25",
+    )
+    args = parser.parse_args()
+    neoBrightness = args.brightness
+    print("Brightness set to " + str(neoBrightness))
+    # Set brightness using neopixel library
     main()
     for i in range(len(lines_array)): 
         combined_array.append(str(lines_array[i] + " " + stops_array[i]))
     print("Feed Read Success!")
     #set all pixels to white
-    pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=.25)
+    pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=neoBrightness)
     pixels1.fill((15, 15, 15))
-    #mother of all regex edits
     # Process the mapping
     for stop, (led_index, color) in stop_to_led_map.items():
         if stop in combined_array:
