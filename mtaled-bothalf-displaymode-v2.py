@@ -17,8 +17,8 @@ line_7 = (100, 0, 100)
 line_ace = (6, 20, 127)
 line_bdfm = (255, 107, 0)
 line_jz = (190, 50, 14)
-line_nqrw = (252, 204, 10)
-line_ls = (128, 129, 131)
+line_nqrw = (162, 128, 8)
+line_ls = (103, 104, 106)
 line_g = (0, 127, 7)
 line_h = (11, 11, 11)
 bg = (5, 5, 5)
@@ -195,7 +195,7 @@ if __name__ == '__main__':
     print("Feed Read Success!")
     #set all pixels to white
     pixels1 = neopixel.NeoPixel(board.D18, 87, brightness=neoBrightness)
-    pixels1.fill((15, 15, 15))
+    pixels1.fill((20, 20, 20))
     # Process the mapping
     for stop, (led_index, color) in stop_to_led_map.items():
         if stop in combined_array:
